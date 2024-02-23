@@ -20,7 +20,7 @@ public class CheckStringAgainstDict {
         }
         for(String eachWord: dict){
             if(s.startsWith(eachWord)){
-                if(check(s.substring(eachWord.length()), dict)) {
+                if(check(s.substring(eachWord.length()), dict, setOfFailures)) {
                     return true;
                 }
             }

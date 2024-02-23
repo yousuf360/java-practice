@@ -34,7 +34,7 @@ public class Main {
 //        List<String> dict = Arrays.asList("apple", "pen");
 
 
-        String s = "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef";
+        String s = "eeeeeeeeeeeeeeeeeeeeeeeeeeef";
         List<String> dict = Arrays.asList(
                 "e",
                 "ee",
