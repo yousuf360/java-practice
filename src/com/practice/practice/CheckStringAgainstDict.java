@@ -11,7 +11,8 @@ public class CheckStringAgainstDict {
         Set<String> setOfFailures = new HashSet<>();
         return check(s, dict, setOfFailures);
     }
-    private static boolean check(String s, List<String> dict, Set<String> setOfFailures){
+    private static boolean check(String s, List<String> dict,
+                                 Set<String> setOfFailures){
         if(setOfFailures.contains(s)){
             return false;
         }
