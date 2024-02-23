@@ -53,19 +53,19 @@ public class Main {
 
         long startTime, endTime, duration;
         boolean result;
-        startTime = System.currentTimeMillis();
+        startTime = System.nanoTime();
         result = CheckStringAgainstDict.checkOld(s, dict);
-        endTime = System.currentTimeMillis();
+        endTime = System.nanoTime();
         duration = (endTime - startTime);
         System.out.println("result:\t"+ result);
-        System.out.println("Time for old approach:\t"+ duration + " ms");
+        System.out.println("Time for old approach:\t"+ duration + " ns, " + duration/1000000 + " ms");
         System.out.println();
-        startTime = System.currentTimeMillis();
+        startTime = System.nanoTime();
         result = CheckStringAgainstDict.check(s, dict);
-        endTime = System.currentTimeMillis();
+        endTime = System.nanoTime();
         duration = (endTime - startTime);
         System.out.println("result:\t"+ result);
-        System.out.println("Time for new approach:\t"+ duration + " ms");
+        System.out.println("Time for old approach:\t"+ duration + " ns, " + duration/1000000 + " ms");
 
     }
 
